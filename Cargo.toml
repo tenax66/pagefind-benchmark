@@ -1,0 +1,19 @@
+[package]
+name = "pagefind-benchmark"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "regex_benchmark"
+path = "src/lib.rs"
+
+[dependencies]
+regex = "1"
+lazy_static = "1"
+
+[dev-dependencies]
+criterion = "0.4"
+
+[[bench]]
+name = "regex_benchmark"
+harness = false
